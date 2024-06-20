@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Pages\Index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\Index.html" />
+  </ItemGroup>
+
 </Project>
