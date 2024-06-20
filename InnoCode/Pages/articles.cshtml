@@ -1,0 +1,88 @@
+﻿@page
+@model InnoCode.Pages.articlesModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Psychology Website</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ADD8E6;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .card {
+            width:300px;
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #90EE90;
+            border-color: #90EE90;
+        }
+        .btn-primary:hover {
+            background-color: #76c776;
+            border-color: #76c776;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <br /><br />
+
+    <h1 class="text-center">Articles</h1>
+    
+    <!-- Main Content -->
+    <div class="container ">
+        
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img style="width:298px;height:200px" src="~/image/images4.jpg" class="card-img-top" alt="Article 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Trầm cảm là gì? Dấu hiệu, nguyên nhân và cách điều trị</h5>
+                        <p class="card-text">Bạn đã nghe nhiều về trầm cảm nhưng chưa biết căn bệnh này nguy hiểm ra sao? Làm thế nào để phát hiện bệnh ngay từ đầu? Liệu có thể chữa trị trầm cảm khỏi hoàn toàn?</p>
+                        <a href="PostDetail" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img style="width:298px;height:200px" src="~/image/images5.jpg" class="card-img-top" alt="Article 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 2</h5>
+                        <p class="card-text">Brief description of the article.</p>
+                        <a href="PostDetail" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img style="width:298px;height:200px" src="~/image/images6.jpg" class="card-img-top" alt="Article 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Article Title 3</h5>
+                        <p class="card-text">Brief description of the article.</p>
+                        <a href="PostDetail" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+﻿@page
+@model InnoCode.Pages.article_detailModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Detail - Psychology Website</title>
+    <link href="~/css/styles - copy.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ADD8E6;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .comments {
+            margin-top: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .comment h4 {
+                margin: 0;
+            }
+
+            .comment p {
+                margin: 5px 0;
+            }
+
+        .comment-form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .comment-form h3 {
+                margin: 0 0 10px 0;
+            }
+
+            .comment-form textarea {
+                width: 100%;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+                margin-bottom: 10px;
+            }
+
+            .comment-form button {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+
+                .comment-form button:hover {
+                    background-color: #555;
+                }
+        .btn-primary {
+            background-color: #90EE90;
+            border-color: #90EE90;
+        }
+
+            .btn-primary:hover {
+                background-color: #76c776;
+                border-color: #76c776;
+            }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+   <br /><br />
+    <h1 class="text-center">Article Title</h1>
+    <br />
+    <!-- Main Content -->
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae turpis bibendum consectetur. Suspendisse potenti. Sed vehicula, dolor vel auctor efficitur, nisl sem tincidunt orci, nec porttitor tortor lorem nec nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras non tincidunt arcu. Maecenas lacinia, leo in tincidunt fermentum, est urna consequat velit, nec auctor velit ipsum ut mi.</p>
+                <p>Curabitur a neque at elit congue ullamcorper. Integer eget efficitur purus, sit amet facilisis magna. Curabitur in libero eget orci finibus porttitor. Integer pulvinar turpis nec orci fermentum, at ultricies augue malesuada. Ut ut nisi vitae neque congue tristique. Aliquam erat volutpat. Ut vel ligula vel metus varius posuere. Integer vel nibh ut eros eleifend vehicula.</p>
+                <p>Fusce nec tortor nec risus elementum sollicitudin. Suspendisse potenti. Donec consequat, erat eu scelerisque cursus, turpis dui vestibulum urna, ac laoreet enim dui non risus. Curabitur ut metus sit amet dolor blandit cursus. Nam non orci et elit tincidunt suscipit. Nulla facilisi. Nam sodales, eros a vehicula ornare, arcu lacus tristique enim, sit amet dictum lacus erat quis lectus. Curabitur euismod, velit in laoreet varius, odio enim viverra dui, eget cursus eros magna a nisi.</p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="comments">
+        <h2>Comments</h2>
+        <div class="comment">
+            <img src="https://via.placeholder.com/40" alt="User Image">
+            <div class="comment-content">
+                <h4>Thoa Kim</h4>
+                <p>Xin xịn</p>
+                <div class="comment-actions">
+                    <span>5 ngày trước</span>
+                    <span>Thích</span>
+                    <span>Phản hồi</span>
+                    <div class="comment-reactions">
+                        <span>👍</span>
+                        <span>❤️</span>
+                        <span>😂</span>
+                        <span>😮</span>
+                        <span>😢</span>
+                        <span>😡</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/40" alt="User Image">
+            <div class="comment-content">
+                <h4>Bùi Tân</h4>
+                <p>Tuyệt vời</p>
+                <div class="comment-actions">
+                    <span>22 giờ trước</span>
+                    <span>Thích</span>
+                    <span>Phản hồi</span>
+                    <div class="comment-reactions">
+                        <span>👍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/40" alt="User Image">
+            <div class="comment-content">
+                <h4>Bùi Tân</h4>
+                <p>Apple tuyệt vời</p>
+                <div class="comment-actions">
+                    <span>2 ngày trước</span>
+                    <span>Thích</span>
+                    <span>Phản hồi</span>
+                    <div class="comment-reactions">
+                        <span>👍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/40" alt="User Image">
+            <div class="comment-content">
+                <h4>Sói Sâu Sắc</h4>
+                <p>Tuyệt vời</p>
+                <div class="comment-actions">
+                    <span>22 giờ trước</span>
+                    <span>Thích</span>
+                    <span>Phản hồi</span>
+                    <div class="comment-reactions">
+                        <span>😡</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment">
+            <img src="https://via.placeholder.com/40" alt="User Image">
+            <div class="comment-content">
+                <h4>Trần Trung</h4>
+                <p>Tuyệt vời!</p>
+                <div class="comment-actions">
+                    <span>22 giờ trước</span>
+                    <span>Thích</span>
+                    <span>Phản hồi</span>
+                </div>
+            </div>
+        </div>
+        <div class="comment-form">
+            <img src="https://via.placeholder.com/40" alt="User Image">
+            <textarea rows="2" placeholder="Viết bình luận..."></textarea>
+            <button type="submit">Gửi</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

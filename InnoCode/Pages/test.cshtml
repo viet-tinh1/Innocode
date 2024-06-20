@@ -1,0 +1,218 @@
+﻿@page
+@model InnoCode.Pages.testModel
+@{
+    Layout = "_Layout1";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dff3f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 16px;
+        }
+
+            .navbar a {
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .navbar a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+            .navbar img {
+                vertical-align: middle;
+            }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #4CAF50;
+        }
+
+            .search-bar input[type="text"] {
+                padding: 10px;
+                font-size: 17px;
+                border: none;
+                width: 200px;
+                margin-right: 10px;
+            }
+
+            .search-bar button {
+                padding: 10px;
+                background: #333;
+                color: white;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+
+                .search-bar button img {
+                    vertical-align: middle;
+                }
+
+                .search-bar button:hover {
+                    background: #ddd;
+                    color: black;
+                }
+
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+            .main-content .column {
+                background-color: #f4f4f4;
+                padding: 20px;
+                border-radius: 8px;
+                width: 30%;
+            }
+
+                .main-content .column h2 {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 8px;
+                }
+
+                .main-content .column .topic {
+                    background-color: #d1c4e9;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border-radius: 8px;
+                }
+
+        .pagination {
+            text-align: center;
+            padding: 20px;
+        }
+
+            .pagination a {
+                margin: 0 5px;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+                .pagination a:hover {
+                    background-color: #333;
+                }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+            .footer div {
+                flex: 1;
+            }
+
+            .footer img {
+                vertical-align: middle;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Home Page</h1>
+    </div>
+    <div class="navbar">
+        <div>
+            <a href="#en">EN</a>
+            <a href="#search"><img src="search-icon.png" alt="Search"></a>
+        </div>
+        <div>
+            <a href="#contact">Contact</a>
+            <a href="#register">Register</a>
+            <a href="#login" class="active">Login</a>
+        </div>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Therapist" name="therapist">
+        <input type="text" placeholder="City or Zip" name="city">
+        <button type="submit"><img src="search-icon.png" alt="Search"></button>
+    </div>
+    <div class="main-content">
+        <div class="column">
+            <h2>For you</h2>
+            <div class="topic">Topic 1</div>
+            <div class="topic">Topic 2</div>
+            <div class="topic">Topic 3</div>
+            <div class="topic">Topic 4</div>
+        </div>
+        <div class="column">
+            <h2>High Vote</h2>
+            <div class="topic">Topic 1</div>
+            <div class="topic">Topic 2</div>
+            <div class="topic">Topic 3</div>
+            <div class="topic">Topic 4</div>
+        </div>
+        <div class="column">
+            <h2>Most Popular</h2>
+            <div class="topic">Topic 1</div>
+            <div class="topic">Topic 2</div>
+            <div class="topic">Topic 3</div>
+            <div class="topic">Topic 4</div>
+        </div>
+    </div>
+    <div class="pagination">
+        <a href="#prev">Previous</a>
+        <a href="#1">1</a>
+        <a href="#2">2</a>
+        <a href="#3">3</a>
+        <a href="#4">4</a>
+        <a href="#5">5</a>
+        <a href="#6">6</a>
+        <a href="#7">7</a>
+        <a href="#8">8</a>
+        <a href="#9">9</a>
+        <a href="#10">10</a>
+        <a href="#next">Next</a>
+    </div>
+    <div class="footer">
+        <div>logo</div>
+        <div>Contract</div>
+        <div>Services</div>
+        <div>download app</div>
+        <div>Get it on Google Play</div>
+    </div>
+</body>
+</html>

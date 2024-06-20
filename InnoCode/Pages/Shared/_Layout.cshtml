@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InnoCode</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/InnoCode.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PsyComm</div>
+            <nav>
+                <ul >
+                    <li><a style="color: white !important;" href="Index">Home</a></li>
+                    <li><a style="color: white !important;" href="articles">Articles</a></li>
+                    <li><a style ="color:white !important;" href="#">Topics</a></li>
+                   @*  <li><a style="color: white !important;" href="#">Community</a></li> *@
+                    <li><a style="color: white !important;" href="AboutUs">About Us</a></li>
+                    <li><a style="color: white !important;" href="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <input type="text" placeholder="Search...">
+                <button class="btn btn-sm btn-outline-info text-white">search</button>
+                <img style="margin-left:5%" src="~/image/profile.jpg" alt="Profile" class="profile-pic">
+            </div>
+        </div>
+    </header>
+    <div style="background-color:#ADD8E6">
+        
+            @RenderBody()
+        
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="contact-info">
+                <p>Contact us at: info@psycomm.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

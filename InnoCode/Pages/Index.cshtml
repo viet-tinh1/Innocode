@@ -1,0 +1,113 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Community</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+
+</head>
+<body><div></div>
+    <br />
+    <div style=" margin-left:20%; height:120px;width:1000px;border-radius:20px " class="bg-primary">
+        <label class="col-form-label" style="font-size:25px;font-weight:bold; margin-top:0.7%;margin-left:5%">Find a Therapist</label>
+        <br />
+        <div class="d-flex" style="margin-left:5%">
+
+            <input style="width: 800px;height:40px;" type="text" placeholder="Ctiy or Zip...">
+            <a href="https://www.google.com/maps" style="margin-left:3%; width:100px;font-size:15px;text-align:center" class="btn  btn-success">Search</a>
+        </div>
+    </div>
+    
+   <br />
+    
+    <main>
+        
+        <section class="featured-articles">
+            <h2>Featured Articles</h2>
+            <div class="carousel">
+                <div class="carousel-item1">
+                    <img style="width:100px;height:100px" src="~/image/images1.jpg" alt="Article 1" />
+                    <h5>Article Title 1</h5>
+                </div>
+                <div class="carousel-item1">
+                    <img style="width:100px;height:100px" src="~/image/images2.jpg" alt="Article 2" /> <h5>Article Title 2</h5>
+                </div>
+                <div class="carousel-item1">
+                    <img style="width:100px;height:100px" src="~/image/images3.jpg" alt="Article 3" /> <h5>Article Title 3</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-articles">
+            <h2>Latest Articles</h2>
+            <div class="row">
+                
+                <div class="articles-grid">
+                    <div class="col">
+                        <div class="article-card">
+                            <img style="width:430px;height:250px" src="~/image/images4.jpg" alt="Article 1" />
+                            <h3>Trầm cảm là gì? Dấu hiệu, nguyên nhân và cách điều trị</h3>
+                            <p>Bạn đã nghe nhiều về trầm cảm nhưng chưa biết căn bệnh này nguy hiểm ra sao? Làm thế nào để phát hiện bệnh ngay từ đầu? Liệu có thể chữa trị trầm cảm khỏi hoàn toàn?</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="article-card">
+                            <img style="width:430px;height:250px" src="~/image/images5.jpg" alt="Article 2">
+                            <h3>Article Title 2</h3>
+                            <p>Short description of the article.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="article-card">
+                            <img style="width:430px;height:250px" src="~/image/images6.jpg" alt="Article 3">
+                            <h3>Article Title 3</h3>
+                            <p>Short description of the article.</p>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <section class="top-authors">
+                <h2>Top Authors</h2>
+                <ul>
+                    <li>Author 1</li>
+                    <li>Author 2</li>
+                    <li>Author 3</li>
+                </ul>
+            </section>
+            <section class="upcoming-events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Event 1</li>
+                    <li>Event 2</li>
+                    <li>Event 3</li>
+                </ul>
+            </section>
+            <section class="newsletter">
+                <h2>Subscribe to our Newsletter</h2>
+                <input type="email" placeholder="Your email">
+                <br />
+                <button class="btn btn-sm btn-outline-success">Subscribe</button>
+            </section>
+        </aside>
+
+
+    </main>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+

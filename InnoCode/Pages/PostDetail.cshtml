@@ -1,0 +1,303 @@
+﻿@page
+@model InnoCode.Pages.PostDetailModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Detail</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .sidebar1 {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            top: 80px; /* Adjust based on your header height */
+            right: 20px; /* Adjust based on your layout */
+            width: 250px; /* Adjust based on your layout */
+            z-index: 1000;
+        }
+
+            .main-content h2, .sidebar1 h2 {
+                background-color: #333;
+                color: white;
+                padding: 10px;
+                border-radius: 8px;
+            }
+
+        .post-detail {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+            .post-detail h3 {
+                margin: 0;
+            }
+
+            .post-detail p {
+                margin: 5px 0;
+            }
+
+        .comments {
+            margin-top: 20px;
+        }
+
+        .comment {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .comment h4 {
+                margin: 0;
+            }
+
+            .comment p {
+                margin: 5px 0;
+            }
+
+        .comment-form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .comment-form h3 {
+                margin: 0 0 10px 0;
+            }
+
+            .comment-form textarea {
+                width: 100%;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+                margin-bottom: 10px;
+            }
+
+            .comment-form button {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+
+                .comment-form button:hover {
+                    background-color: #555;
+                }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Trầm cảm là gì? Dấu hiệu, nguyên nhân và cách điều trị</h2>
+            <div class="post-detail"><br />
+                <h3>Trầm cảm là gì?</h3>
+                <p>Theo Hiệp hội Tâm thần học Hoa Kỳ – APA, trầm cảm (depression) là một dạng rối loạn tâm trạng phổ biến, người mắc thường có tâm trạng buồn bã, trầm uất, có hoặc không kèm theo triệu chứng khóc.</p>
+                <p>Chưa kể, người mắc phải rối loạn này sẽ cảm thấy mất động lực, giảm hứng thú trong mọi việc, kể cả những hoạt động mang lại niềm vui cho họ trước đây. Tình trạng này kéo dài sẽ bắt đầu gây ảnh hưởng đến thể chất, công việc, làm rạn nứt các mối quan hệ xung quanh, thậm chí còn khiến cho nạn nhân có ý định tử tự.</p>
+                <br /><h3>Triệu chứng nhận biết trầm cảm</h3>
+                <p>Nhìn chung, hầu hết người trầm cảm sẽ có các dấu hiệu như sau:</p>
+
+                <ul> <li><span>Chậm chạp hoặc dễ kích động.</span></li> 
+                    <li><span>Cảm thấy mệt mỏi và mất năng lượng.</span></li> 
+                    <li><span>Rối loạn giấc ngủ: mất ngủ hoặc ngủ nhiều.</span></li> 
+                    <li><span>Cảm thấy tự ti, vô dụng, hoặc mặc cảm tội lỗi.</span></li> 
+                    <li><span>Giảm khả năng tập trung, hoặc thiếu quyết đoán.</span></li> 
+                    <li>Tâm trạng chán nản thường xuyên, gần như mỗi ngày.</li> 
+                    <li><span>Có suy nghĩ đến cái chết; có ý nghĩ tự tự, lên kế hoạch hoặc cố gắng tự tử.</span></li> 
+                    <li><span>Mất hứng thú đáng kể trong hầu hết mọi việc, mọi hoạt động hàng ngày (bao gồm cả hoạt động tình dục).</span></li> 
+                    <li><span>Giảm cân đáng kể dù không ăn kiêng; hoặc tăng cân trong một số trường hợp; thay đổi khẩu vị (có thể giảm hoặc tăng khẩu vị).</span></li> 
+                    <li><span>Cảm thấy buồn hầu như mỗi ngày và hầu hết thời gian trong ngày. Ngoài ra người mắc rối loạn có thể cảm thấy trống rỗng, vô vọng; hoặc dễ khóc. Ở trẻ em và người lớn tuổi có thể biểu hiện bằng sự cáu gắt.</span></li> 
+                </ul><br />
+                <h3>Nguyên nhân dẫn đến trầm cảm</h3>
+                <p>Hiện nay, các nhà nghiên cứu chưa xác định được nguyên nhân chính xác gây ra trầm cảm; có nhiều yếu tố kết hợp khiến một người mắc rối loạn này, cụ thể là:</p>
+                <ul> <li><span><strong>Di truyền: </strong></span><span>Nếu có cha hoặc mẹ mắc trầm cảm, tỷ lệ mắc trầm cảm ở con sẽ khoảng 10-25%; nguy cơ sẽ tăng gấp đôi nếu cả cha và mẹ đều mắc trầm cảm.</span></li> <li><span><strong>Chất dẫn truyền thần kinh:</strong> Theo một số nghiên cứu, trong não người mắc trầm cảm có sự thiếu hụt chất dẫn truyền thần kinh serotonin. Ngoài ra, còn có vai trò của dopamine và norepinephrine.</span></li> <li><strong><a href="https://hellobacsi.com/benh/cang-thang-stress/" data-event-label="https://hellobacsi.com/benh/cang-thang-stress/" data-event-action="Stress:" data-event-category="Internal Link Click on Article">Stress:</a> </strong>Căng thẳng do n<span>gười thân yêu qua đời; hay do khó khăn trong mối quan hệ tình cảm hay bất cứ tình huống gây stress nào cũng có thể làm gia tăng nguy cơ mắc trầm cảm.</span></li> </ul>
+                <div class="comments">
+                    <h2>Comments</h2>
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User Image">
+                        <div class="comment-content">
+                            <h4>Thoa Kim</h4>
+                            <p>Xin xịn</p>
+                            <div class="comment-actions">
+                                <span>5 ngày trước</span>
+                                <span>Thích</span>
+                                <span>Phản hồi</span>
+                                <div class="comment-reactions">
+                                    <span>👍</span>
+                                    <span>❤️</span>
+                                    <span>😂</span>
+                                    <span>😮</span>
+                                    <span>😢</span>
+                                    <span>😡</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User Image">
+                        <div class="comment-content">
+                            <h4>Bùi Tân</h4>
+                            <p>Tuyệt vời</p>
+                            <div class="comment-actions">
+                                <span>22 giờ trước</span>
+                                <span>Thích</span>
+                                <span>Phản hồi</span>
+                                <div class="comment-reactions">
+                                    <span>👍</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User Image">
+                        <div class="comment-content">
+                            <h4>Bùi Tân</h4>
+                            <p>Apple tuyệt vời</p>
+                            <div class="comment-actions">
+                                <span>2 ngày trước</span>
+                                <span>Thích</span>
+                                <span>Phản hồi</span>
+                                <div class="comment-reactions">
+                                    <span>👍</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User Image">
+                        <div class="comment-content">
+                            <h4>Sói Sâu Sắc</h4>
+                            <p>Tuyệt vời</p>
+                            <div class="comment-actions">
+                                <span>22 giờ trước</span>
+                                <span>Thích</span>
+                                <span>Phản hồi</span>
+                                <div class="comment-reactions">
+                                    <span>😡</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User Image">
+                        <div class="comment-content">
+                            <h4>Trần Trung</h4>
+                            <p>Tuyệt vời!</p>
+                            <div class="comment-actions">
+                                <span>22 giờ trước</span>
+                                <span>Thích</span>
+                                <span>Phản hồi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-form">
+                        <img src="https://via.placeholder.com/40" alt="User Image">
+                        <textarea rows="2" placeholder="Viết bình luận..."></textarea>
+                        <button type="submit">Gửi</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar1" style="margin-left:10%">
+                <h2>Popular Topics</h2>
+                <ul>
+                    <li><a href="#topic1">Topic 1</a></li>
+                    <li><a href="#topic2">Topic 2</a></li>
+                    <li><a href="#topic3">Topic 3</a></li>
+                    <li><a href="#topic4">Topic 4</a></li>
+                    <li><a href="#topic5">Topic 5</a></li>
+                </ul>
+            </div>
+        </div>
+
+</body>
+<script>
+    document.addEventListener("scroll", function () {
+        var sidebar = document.querySelector(".sidebar1");
+        var headerHeight = 350; // Chiều cao của header (điều chỉnh theo thiết kế của bạn)
+        var scrollPosition = window.scrollY + window.innerHeight / 2; // Vị trí cuộn hiện tại + một nửa chiều cao của màn hình
+
+        // Nếu vị trí cuộn lớn hơn headerHeight, cố định .sidebar1
+        if (scrollPosition > headerHeight) {
+            sidebar.style.position = "fixed";
+
+            // Điều chỉnh khoảng cách từ top
+        } else {
+            sidebar.style.position = "static";
+
+
+
+        }
+    });
+</script>
+</html>
